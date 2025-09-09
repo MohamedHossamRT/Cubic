@@ -1,5 +1,6 @@
 // Init Swiper
 var swiper = new Swiper(".mySwiper", {
+  spaceBetween: 30,
   loop: false,
   autoplay: {
     delay: 2000,
