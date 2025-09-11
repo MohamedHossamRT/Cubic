@@ -1,4 +1,5 @@
-// Init Swiper
+const isRTL = document.documentElement.getAttribute("dir") === "rtl";
+
 var swiper = new Swiper(".mySwiper", {
   spaceBetween: 30,
   loop: false,
@@ -7,6 +8,7 @@ var swiper = new Swiper(".mySwiper", {
     disableOnInteraction: false,
   },
   slidesPerView: 1,
+  rtl: isRTL,
 });
 
 var testimonialSwiper = new Swiper(".testimonialSwiper", {
@@ -23,6 +25,7 @@ var testimonialSwiper = new Swiper(".testimonialSwiper", {
     el: ".swiper-pagination",
     clickable: true,
   },
+  rtl: isRTL,
 });
 
 var platformsSwiper = new Swiper(".platformsSwiper", {
@@ -43,6 +46,7 @@ var platformsSwiper = new Swiper(".platformsSwiper", {
     delay: 2000,
     disableOnInteraction: false,
   },
+  rtl: isRTL,
 });
 
 document.addEventListener("DOMContentLoaded", function () {
@@ -64,7 +68,6 @@ document.addEventListener("DOMContentLoaded", function () {
         var filterValue = btn.getAttribute("data-filter");
         iso.arrange({ filter: filterValue });
 
-        // toggle active class
         filters.forEach((b) => b.classList.remove("active"));
         btn.classList.add("active");
       });

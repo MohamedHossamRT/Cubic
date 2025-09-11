@@ -1,19 +1,25 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar" dir="rtl">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>LandingPage</title>
+    <title>الصفحة الرئيسية</title>
+
+    <!-- Bootstrap RTL -->
     <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
       rel="stylesheet"
-      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.rtl.min.css"
+      integrity="sha384-CfCrinSRH2IR6a4e6fy2q6ioOX7O6Mtm1L9vRvFZ1trBncWmMePhzvafv7oIcWiW"
       crossorigin="anonymous"
     />
+
+    <!-- Swiper -->
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
+
+    <!-- Font Awesome -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
@@ -21,7 +27,8 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="css/style.css" />
+
+    <link rel="stylesheet" href="css/style-ar.css" />
   </head>
   <body
     data-bs-spy="scroll"
@@ -32,8 +39,8 @@
     <!-- Start Navbar -->
     <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top px-md-5">
       <div class="container-fluid">
-        <a class="navbar-brand ms-5" href="#">
-          <img src="images/imgi_2_logo-2.png" alt="" width="65%" />
+        <a class="navbar-brand me-5" href="#">
+          <img src="images/imgi_2_logo-2.png" alt="الشعار" width="65%" />
         </a>
         <button
           class="navbar-toggler"
@@ -42,7 +49,7 @@
           data-bs-target="#navbarNav"
           aria-controls="navbarNav"
           aria-expanded="false"
-          aria-label="Toggle navigation"
+          aria-label="قائمة التنقل"
         >
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -50,40 +57,40 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav w-100 justify-content-center gap-4">
             <li class="nav-item">
-              <a class="nav-link active" href="#home">Home</a>
+              <a class="nav-link active" href="#home">الرئيسية</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#about">About us</a>
+              <a class="nav-link" href="#about">من نحن</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#team">Team</a>
+              <a class="nav-link" href="#team">الفريق</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#services">Services</a>
+              <a class="nav-link" href="#services">الخدمات</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#works">Works</a>
+              <a class="nav-link" href="#works">الأعمال</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#testimonial">Testimonial</a>
+              <a class="nav-link" href="#testimonial">آراء العملاء</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#blog">Blog</a>
+              <a class="nav-link" href="#blog">المدونة</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#contact">Contact</a>
+              <a class="nav-link" href="#contact">اتصل بنا</a>
             </li>
           </ul>
 
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">
               <a
-                href="index-ar.html"
+                href="index.html"
                 class="nav-link d-flex align-items-center"
                 title="Switch to Arabic"
               >
                 <i class="fa-solid fa-globe"></i>
-                <span class="ms-2">AR</span>
+                <span class="ms-2">EN</span>
               </a>
             </li>
           </ul>
@@ -99,29 +106,31 @@
       style="height: 100vh"
     >
       <h1 class="text-white text-center">
-        Creative Agency / Website Development / Copywriter
+        وكالة إبداعية / تطوير مواقع / كتابة محتوى
       </h1>
       <div class="custom-swiper d-block mx-auto">
         <div class="swiper mySwiper">
           <div class="swiper-wrapper">
-            <div class="swiper-slide">Welcome to <span>cubic</span></div>
-            <div class="swiper-slide">desktop + <span>mobile</span></div>
-            <div class="swiper-slide">clean &amp; <span>fresh</span></div>
+            <div class="swiper-slide">مرحباً بك في <span>كيوبيك</span></div>
+            <div class="swiper-slide">سطح المكتب + <span>الجوال</span></div>
             <div class="swiper-slide">
-              <i class="fa-solid fa-bicycle"></i> ready to <span>go?</span>
+              تصميم <span>نظيف</span> &amp; <span>حديث</span>
+            </div>
+            <div class="swiper-slide">
+              <i class="fa-solid fa-bicycle"></i> هل أنت <span>جاهز؟</span>
             </div>
           </div>
         </div>
       </div>
       <div class="text-center mt-4">
-        <a href="#works" class="view-works"> view our works </a>
+        <a href="#works" class="view-works"> شاهد أعمالنا </a>
       </div>
     </section>
     <!-- End Home -->
 
     <!-- Start About Us -->
     <section id="about" class="text-center">
-      <h2 class="">Who we <span>are?</span></h2>
+      <h2 class="">من <span>نحن؟</span></h2>
       <div class="brdr"></div>
 
       <div class="container my-5">
@@ -130,15 +139,16 @@
             <div class="card aboutus-card p-5">
               <div class="card-body text-center">
                 <i class="fas fa-briefcase fa-3x mb-4"></i>
-                <h5 class="card-title">Our Portfolio</h5>
-                <p class="card-text">Our recent works</p>
+                <h5 class="card-title">أعمالنا</h5>
+                <p class="card-text">آخر مشاريعنا</p>
               </div>
               <div class="hover-content">
                 <p class="hover-paragraph">
-                  a showcase of our proudest creations and the embodiment of our
-                  creative prowess.
+                  مجموعة من أبرز إبداعاتنا وتجسيد لقوة ابتكارنا.
                 </p>
-                <button class="btn btn-custom">read more</button>
+                <button class="btn btn-custom" aria-label="المزيد عن أعمالنا">
+                  اقرأ المزيد
+                </button>
               </div>
             </div>
           </div>
@@ -147,15 +157,17 @@
             <div class="card aboutus-card p-5">
               <div class="card-body text-center">
                 <i class="fas fa-star fa-3x mb-4"></i>
-                <h5 class="card-title">Experiences</h5>
-                <p class="card-text">What we have done</p>
+                <h5 class="card-title">خبراتنا</h5>
+                <p class="card-text">ما أنجزناه</p>
               </div>
               <div class="hover-content">
                 <p class="hover-paragraph">
-                  Where we invite you to embark on a journey of wonder,
-                  engagement, and unforgettable moments.
+                  ندعوك للانطلاق معنا في رحلة مليئة بالإبداع والتجارب
+                  الاستثنائية.
                 </p>
-                <button class="btn btn-custom">read more</button>
+                <button class="btn btn-custom" aria-label="المزيد عن خبراتنا">
+                  اقرأ المزيد
+                </button>
               </div>
             </div>
           </div>
@@ -164,15 +176,17 @@
             <div class="card aboutus-card p-5">
               <div class="card-body text-center">
                 <i class="fas fa-eye fa-3x mb-4"></i>
-                <h5 class="card-title">Our Vision</h5>
-                <p class="card-text">View our story</p>
+                <h5 class="card-title">رؤيتنا</h5>
+                <p class="card-text">اكتشف قصتنا</p>
               </div>
               <div class="hover-content">
                 <p class="hover-paragraph">
-                  We believe that creativity has the power to shape perceptions,
-                  spark innovation, and bring about meaningful transformation.
+                  نؤمن أن الإبداع قادر على تشكيل الانطباعات، وإلهام الابتكار،
+                  وإحداث تغيير حقيقي.
                 </p>
-                <button class="btn btn-custom">read more</button>
+                <button class="btn btn-custom" aria-label="المزيد عن رؤيتنا">
+                  اقرأ المزيد
+                </button>
               </div>
             </div>
           </div>
@@ -181,15 +195,16 @@
             <div class="card aboutus-card p-5">
               <div class="card-body text-center">
                 <i class="fas fa-users fa-3x mb-4"></i>
-                <h5 class="card-title">Happy Clients</h5>
-                <p class="card-text">What they says</p>
+                <h5 class="card-title">عملاؤنا السعداء</h5>
+                <p class="card-text">ماذا يقولون عنا</p>
               </div>
               <div class="hover-content">
                 <p class="hover-paragraph">
-                  Our greatest satisfaction comes from the happiness and success
-                  of our clients.
+                  أكبر مصدر فخر لنا هو رضا عملائنا ونجاحهم.
                 </p>
-                <button class="btn btn-custom">read more</button>
+                <button class="btn btn-custom" aria-label="المزيد عن عملائنا">
+                  اقرأ المزيد
+                </button>
               </div>
             </div>
           </div>
@@ -201,53 +216,47 @@
           <div class="col-md-6 d-none d-md-block">
             <img
               src="images/imgi_33_bg-side-1.jpg"
-              class="img-fluid h-100 w-100 object-fit-cover"
-              alt="Sample"
+              class="img-fluid h-100 w-100 object-fit-cover rtl-flip"
+              alt="صورة تعريفية"
             />
           </div>
 
           <div class="col-12 col-md-6 align-content-center text-start">
             <h3 class="mb-3">
-              We are group of professionals focused on making creative and
-              innovative works
+              نحن مجموعة من المحترفين نركز على تقديم أعمال إبداعية ومبتكرة
             </h3>
             <p class="mb-4">
-              We believe in the power of creativity to transform brands and
-              captivate audiences. We are a team of passionate and talented
-              individuals who thrive on turning your vision into a reality.
-              Whether you're a startup looking to make a bold entrance or an
-              established business seeking a fresh perspective, we're here to
-              make your creative dreams soar.
+              نؤمن بقوة الإبداع في تحويل العلامات التجارية وجذب الجماهير. نحن
+              فريق شغوف وموهوب نسعى لتحويل رؤيتك إلى واقع. سواء كنت شركة ناشئة
+              تبحث عن انطلاقة جريئة أو مؤسسة قائمة تسعى لزوايا جديدة، نحن هنا
+              لنحقق طموحاتك الإبداعية.
             </p>
 
             <div class="row">
               <div class="col-12 col-md-6 mb-4">
-                <h4>Our Vision</h4>
+                <h4>رؤيتنا</h4>
                 <p>
-                  As a creative studio, our vision is to be a catalyst for
-                  inspiration, innovation, and artistic expression that
-                  resonates with audiences on a deep and emotional level.
+                  كرَكازة إبداعية، رؤيتنا هي أن نكون مصدر إلهام وابتكار وتعبير
+                  فني يتواصل بعمق مع الجمهور.
                 </p>
               </div>
               <div class="col-12 col-md-6">
-                <h4>Our Mission</h4>
+                <h4>مهمتنا</h4>
                 <p>
-                  Our mission is to understand the unique essence of each brand
-                  we work with and translate it into compelling visual
-                  narratives and engaging experiences.
+                  مهمتنا هي فهم جوهر كل علامة تجارية نعمل معها وتحويله إلى قصص
+                  بصرية وتجارب مؤثرة.
                 </p>
               </div>
             </div>
           </div>
         </div>
       </div>
-
-      <!-- End About Us -->
     </section>
+    <!-- End About Us -->
 
     <!-- Start Team -->
     <section id="team" class="text-center">
-      <h2>Meet the <span>team</span></h2>
+      <h2>قابل <span>الفريق</span></h2>
       <div class="brdr"></div>
 
       <div class="container my-5">
@@ -257,15 +266,15 @@
               <img
                 src="images/imgi_3_team_pic_1.jpg"
                 class="card-img-top"
-                alt=""
+                alt="جون سميث"
               />
               <div class="hover-content team-hover-content text-start">
-                <h3 class="team-name">John Smith</h3>
-                <p class="team-role">Project Manager</p>
+                <h3 class="team-name">جون سميث</h3>
+                <p class="team-role">مدير المشاريع</p>
                 <div class="team-divider my-3"></div>
                 <p class="team-description">
-                  Ensuring the smooth and successful execution of projects at
-                  our creative studio.
+                  مسؤول عن ضمان التنفيذ السلس والناجح للمشاريع في استوديو
+                  الإبداع لدينا.
                 </p>
                 <div class="social-icons">
                   <a href="#" class="social-icon"
@@ -290,15 +299,15 @@
               <img
                 src="images/imgi_4_team_pic_2.jpg"
                 class="card-img-top"
-                alt=""
+                alt="مايكل دينيس"
               />
               <div class="hover-content team-hover-content text-start">
-                <h3 class="team-name">Michael Dennis</h3>
-                <p class="team-role">Creative Director</p>
+                <h3 class="team-name">مايكل دينيس</h3>
+                <p class="team-role">المدير الإبداعي</p>
                 <div class="team-divider my-3"></div>
                 <p class="team-description">
-                  Play a pivotal role in shaping the creative vision and driving
-                  innovation at our studio.
+                  يلعب دورًا محوريًا في تشكيل الرؤية الإبداعية ودفع الابتكار في
+                  الاستوديو.
                 </p>
                 <div class="social-icons">
                   <a href="#" class="social-icon"
@@ -323,15 +332,15 @@
               <img
                 src="images/imgi_5_team_pic_3.jpg"
                 class="card-img-top"
-                alt=""
+                alt="سارة ميشيل"
               />
               <div class="hover-content team-hover-content text-start">
-                <h3 class="team-name">Sarah Michelle</h3>
-                <p class="team-role">Website Designer</p>
+                <h3 class="team-name">سارة ميشيل</h3>
+                <p class="team-role">مصممة مواقع</p>
                 <div class="team-divider my-3"></div>
                 <p class="team-description">
-                  Passionate website designer dedicated to creating stunning
-                  online experiences that captivate and engage users.
+                  مصممة مواقع شغوفة مكرسة لإنشاء تجارب مميزة عبر الإنترنت تجذب
+                  المستخدمين.
                 </p>
                 <div class="social-icons">
                   <a href="#" class="social-icon"
@@ -356,15 +365,14 @@
               <img
                 src="images/imgi_6_team_pic_4.jpg"
                 class="card-img-top"
-                alt=""
+                alt="كاتي ويلسون"
               />
               <div class="hover-content team-hover-content text-start">
-                <h3 class="team-name">Katty Wilson</h3>
-                <p class="team-role">Graphic Designer</p>
+                <h3 class="team-name">كاتي ويلسون</h3>
+                <p class="team-role">مصممة جرافيك</p>
                 <div class="team-divider my-3"></div>
                 <p class="team-description">
-                  Passionate graphic designer who loves to bring ideas to life
-                  through captivating and impactful designs.
+                  مصممة جرافيك شغوفة تحب تحويل الأفكار إلى تصاميم مؤثرة وجذابة.
                 </p>
                 <div class="social-icons">
                   <a href="#" class="social-icon"
@@ -387,7 +395,7 @@
       </div>
 
       <div class="container-fluid fun-facts text-center">
-        <h2>Fun <span>facts</span></h2>
+        <h2>حقائق <span>ممتعة</span></h2>
         <div class="brdr"></div>
 
         <div class="container my-5">
@@ -398,8 +406,8 @@
               >
                 <div class="card-body">
                   <i class="fas fa-clock fa-3x mb-3"></i>
-                  <h4 class="card-title">1980</h4>
-                  <p class="card-text">Hours of Works</p>
+                  <h4 class="card-title"><span dir="ltr">1980</span></h4>
+                  <p class="card-text">ساعات عمل</p>
                 </div>
               </div>
             </div>
@@ -410,8 +418,8 @@
               >
                 <div class="card-body">
                   <i class="fas fa-code fa-3x mb-3"></i>
-                  <h4 class="card-title">1280</h4>
-                  <p class="card-text">Lines of Code</p>
+                  <h4 class="card-title"><span dir="ltr">1280</span></h4>
+                  <p class="card-text">سطر برمجي</p>
                 </div>
               </div>
             </div>
@@ -422,8 +430,8 @@
               >
                 <div class="card-body">
                   <i class="fas fa-pizza-slice fa-3x mb-3"></i>
-                  <h4 class="card-title">750</h4>
-                  <p class="card-text">Slice of Pizza</p>
+                  <h4 class="card-title"><span dir="ltr">750</span></h4>
+                  <p class="card-text">شريحة بيتزا</p>
                 </div>
               </div>
             </div>
@@ -434,8 +442,8 @@
               >
                 <div class="card-body">
                   <i class="fas fa-coffee fa-3x mb-3"></i>
-                  <h4 class="card-title">520</h4>
-                  <p class="card-text">Cups of Coffee</p>
+                  <h4 class="card-title"><span dir="ltr">520</span></h4>
+                  <p class="card-text">فنجان قهوة</p>
                 </div>
               </div>
             </div>
@@ -447,7 +455,7 @@
 
     <!-- Start Services -->
     <section id="services" class="text-center mt-5">
-      <h2>Our <span>services</span></h2>
+      <h2><span>خدماتنا</span></h2>
       <div class="brdr mb-5"></div>
 
       <div class="container">
@@ -456,12 +464,11 @@
             <div class="service-box d-flex align-items-start">
               <i class="fas fa-desktop service-icon"></i>
               <div class="ms-3 text-start">
-                <h4 class="service-title">Web Design</h4>
+                <h4 class="service-title">تصميم المواقع</h4>
                 <p>
-                  Crafting modern, user-friendly, and responsive websites that
-                  provide seamless browsing experiences. Our services encompass
-                  wireframing, prototyping, UI/UX design, and front-end
-                  development.
+                  نصمم مواقع عصرية، سهلة الاستخدام ومتجاوبة، توفر تجربة تصفح
+                  سلسة. تشمل خدماتنا تخطيط الإطارات، النماذج الأولية، تصميم
+                  واجهة المستخدم وتجربة المستخدم، وتطوير الواجهة الأمامية.
                 </p>
               </div>
             </div>
@@ -471,11 +478,11 @@
             <div class="service-box d-flex align-items-start">
               <i class="fas fa-lightbulb service-icon"></i>
               <div class="ms-3 text-start">
-                <h4 class="service-title">Branding</h4>
+                <h4 class="service-title">الهوية البصرية</h4>
                 <p>
-                  We create compelling brand identities that reflect your core
-                  values and resonate with your target audience. This includes
-                  logo design, typography, color palettes, and brand guidelines.
+                  نصمم هويات بصرية مميزة تعكس قيم علامتك التجارية وتلهم جمهورك
+                  المستهدف. يشمل ذلك تصميم الشعار، اختيار الخطوط، لوحات الألوان،
+                  وإرشادات الهوية.
                 </p>
               </div>
             </div>
@@ -485,11 +492,11 @@
             <div class="service-box d-flex align-items-start">
               <i class="fas fa-bullhorn service-icon"></i>
               <div class="ms-3 text-start">
-                <h4 class="service-title">Social Media Marketing</h4>
+                <h4 class="service-title">التسويق عبر وسائل التواصل</h4>
                 <p>
-                  Our team can create compelling social media campaigns that
-                  align with your brand and engage your target audience. From
-                  designing eye-catching graphics to crafting engaging copy.
+                  نقدم حملات تسويقية مبتكرة على وسائل التواصل الاجتماعي تتماشى
+                  مع هوية علامتك التجارية وتزيد من تفاعل جمهورك، بداية من
+                  التصاميم الجذابة وصولًا إلى كتابة محتوى مؤثر.
                 </p>
               </div>
             </div>
@@ -499,11 +506,11 @@
             <div class="service-box d-flex align-items-start">
               <i class="fas fa-mobile-alt service-icon"></i>
               <div class="ms-3 text-start">
-                <h4 class="service-title">Mobile Apps</h4>
+                <h4 class="service-title">تطبيقات الهاتف</h4>
                 <p>
-                  With the increasing demand for mobile apps, we can help you
-                  design intuitive and visually appealing interfaces for iOS and
-                  Android platforms. Our goal is to create engaging experiences.
+                  مع تزايد الطلب على التطبيقات، نساعدك في تصميم واجهات بديهية
+                  وجذابة لمنصات iOS وAndroid، بهدف خلق تجارب استخدام تفاعلية
+                  وملهمة.
                 </p>
               </div>
             </div>
@@ -513,12 +520,11 @@
             <div class="service-box d-flex align-items-start">
               <i class="fas fa-search-dollar service-icon"></i>
               <div class="ms-3 text-start">
-                <h4 class="service-title">SEO Services</h4>
+                <h4 class="service-title">خدمات تحسين محركات البحث</h4>
                 <p>
-                  Our digital marketing experts can optimize your website for
-                  search engines, conduct keyword research, and develop
-                  effective strategies to improve your online visibility and
-                  drive organic traffic to your website.
+                  خبراؤنا في التسويق الرقمي يساعدونك على تحسين ظهور موقعك
+                  بمحركات البحث، من خلال دراسة الكلمات المفتاحية وتطوير
+                  استراتيجيات فعالة لزيادة الزيارات العضوية.
                 </p>
               </div>
             </div>
@@ -528,12 +534,11 @@
             <div class="service-box d-flex align-items-start">
               <i class="fas fa-pen-nib service-icon"></i>
               <div class="ms-3 text-start">
-                <h4 class="service-title">Content Creation</h4>
+                <h4 class="service-title">إنتاج المحتوى</h4>
                 <p>
-                  We provide content creation services that include copywriting,
-                  photography, videography, and animation. We can help you tell
-                  your brand's story through compelling visuals and engaging
-                  narratives.
+                  نقدم خدمات إنتاج المحتوى بما يشمل كتابة النصوص، التصوير
+                  الفوتوغرافي، إنتاج الفيديو، والرسوم المتحركة. نساعدك في سرد
+                  قصة علامتك التجارية بأسلوب بصري جذاب ومحتوى مؤثر.
                 </p>
               </div>
             </div>
@@ -546,13 +551,13 @@
       </div>
 
       <div class="container-fluid our-skills align-content-center py-5">
-        <h2>Our <span>skills</span></h2>
+        <h2><span>مهاراتنا</span></h2>
         <div class="brdr mb-5"></div>
 
         <div class="container my-5">
           <div class="row">
             <div class="col-12 col-md-6 mb-4">
-              <h6 class="text-start">Design</h6>
+              <h6 class="text-start">التصميم</h6>
               <div class="progress skill-progress">
                 <div
                   class="progress-bar bg-orange"
@@ -566,7 +571,7 @@
             </div>
 
             <div class="col-12 col-md-6 mb-md-4 mb-5">
-              <h6 class="text-start">Development</h6>
+              <h6 class="text-start">التطوير</h6>
               <div class="progress skill-progress">
                 <div
                   class="progress-bar bg-orange"
@@ -580,7 +585,7 @@
             </div>
 
             <div class="col-12 col-md-6 mb-4">
-              <h6 class="text-start">Marketing</h6>
+              <h6 class="text-start">التسويق</h6>
               <div class="progress skill-progress">
                 <div
                   class="progress-bar bg-orange"
@@ -594,7 +599,7 @@
             </div>
 
             <div class="col-12 col-md-6 mb-md-4 mb-5">
-              <h6 class="text-start">Branding</h6>
+              <h6 class="text-start">الهوية البصرية</h6>
               <div class="progress skill-progress">
                 <div
                   class="progress-bar bg-orange"
@@ -608,7 +613,7 @@
             </div>
 
             <div class="col-12 col-md-6 mb-4">
-              <h6 class="text-start">Monitoring</h6>
+              <h6 class="text-start">المتابعة</h6>
               <div class="progress skill-progress">
                 <div
                   class="progress-bar bg-orange"
@@ -622,7 +627,7 @@
             </div>
 
             <div class="col-12 col-md-6 mb-md-4 mb-5">
-              <h6 class="text-start">Supporting</h6>
+              <h6 class="text-start">الدعم</h6>
               <div class="progress skill-progress">
                 <div
                   class="progress-bar bg-orange"
@@ -642,20 +647,18 @@
 
     <!-- Start Works -->
     <section id="works" class="text-center mt-5">
-      <h2>Our <span>Works</span></h2>
+      <h2><span>أعمالنا</span></h2>
       <div class="brdr mb-5"></div>
 
       <div class="">
         <div class="mb-4 d-flex flex-wrap justify-content-center gap-2">
-          <a href="#" class="filter-btn active" data-filter="*">Show All</a>
+          <a href="#" class="filter-btn active" data-filter="*">عرض الكل</a>
           <a href="#" class="filter-btn" data-filter=".illustration"
-            >Illustration</a
+            >رسوم توضيحية</a
           >
-          <a href="#" class="filter-btn" data-filter=".mobile">Mobile</a>
-          <a href="#" class="filter-btn" data-filter=".photography"
-            >Photography</a
-          >
-          <a href="#" class="filter-btn" data-filter=".website">Website</a>
+          <a href="#" class="filter-btn" data-filter=".mobile">تطبيقات</a>
+          <a href="#" class="filter-btn" data-filter=".photography">تصوير</a>
+          <a href="#" class="filter-btn" data-filter=".website">مواقع ويب</a>
         </div>
 
         <div class="row g-0 works-grid">
@@ -664,7 +667,7 @@
               <img
                 src="images/imgi_8_pf (1).jpg"
                 class="img-fluid"
-                alt="Illustration"
+                alt="رسوم توضيحية"
               />
               <div
                 class="overlay d-flex flex-column justify-content-end align-items-center text-white"
@@ -677,8 +680,8 @@
                     <i class="fas fa-link"></i>
                   </a>
                 </div>
-                <h6 class="mb-1">Project Name #1</h6>
-                <p class="mb-3">Illustration</p>
+                <h6 class="mb-1">المشروع رقم 1</h6>
+                <p class="mb-3">رسوم توضيحية</p>
               </div>
             </div>
           </div>
@@ -688,7 +691,7 @@
               <img
                 src="images/imgi_9_pf (2).jpg"
                 class="img-fluid"
-                alt="Mobile"
+                alt="تطبيقات"
               />
               <div
                 class="overlay d-flex flex-column justify-content-end align-items-center text-white"
@@ -701,8 +704,8 @@
                     <i class="fas fa-link"></i>
                   </a>
                 </div>
-                <h6 class="mb-1">Project Name #2</h6>
-                <p class="mb-3">Mobile, Website</p>
+                <h6 class="mb-1">المشروع رقم 2</h6>
+                <p class="mb-3">تطبيقات، مواقع ويب</p>
               </div>
             </div>
           </div>
@@ -712,7 +715,7 @@
               <img
                 src="images/imgi_10_pf (3).jpg"
                 class="img-fluid"
-                alt="Photography"
+                alt="تصوير"
               />
               <div
                 class="overlay d-flex flex-column justify-content-end align-items-center text-white"
@@ -725,8 +728,8 @@
                     <i class="fas fa-link"></i>
                   </a>
                 </div>
-                <h6 class="mb-1">Project Name #3</h6>
-                <p class="mb-3">Mobile, Website</p>
+                <h6 class="mb-1">المشروع رقم 3</h6>
+                <p class="mb-3">تطبيقات، مواقع ويب</p>
               </div>
             </div>
           </div>
@@ -736,7 +739,7 @@
               <img
                 src="images/imgi_11_pf (4).jpg"
                 class="img-fluid"
-                alt="Website"
+                alt="موقع ويب"
               />
               <div
                 class="overlay d-flex flex-column justify-content-end align-items-center text-white"
@@ -749,8 +752,8 @@
                     <i class="fas fa-link"></i>
                   </a>
                 </div>
-                <h6 class="mb-1">Project Name #4</h6>
-                <p class="mb-3">Illustration, Photography</p>
+                <h6 class="mb-1">المشروع رقم 4</h6>
+                <p class="mb-3">رسوم توضيحية، تصوير</p>
               </div>
             </div>
           </div>
@@ -760,7 +763,7 @@
               <img
                 src="images/imgi_12_pf (5).jpg"
                 class="img-fluid"
-                alt="Illustration"
+                alt="رسوم توضيحية"
               />
               <div
                 class="overlay d-flex flex-column justify-content-end align-items-center text-white"
@@ -773,8 +776,8 @@
                     <i class="fas fa-link"></i>
                   </a>
                 </div>
-                <h6 class="mb-1">Project Name #5</h6>
-                <p class="mb-3">Photography, Website, Mobile</p>
+                <h6 class="mb-1">المشروع رقم 5</h6>
+                <p class="mb-3">تصوير، مواقع ويب، تطبيقات</p>
               </div>
             </div>
           </div>
@@ -784,7 +787,7 @@
               <img
                 src="images/imgi_13_pf (6).jpg"
                 class="img-fluid"
-                alt="Mobile"
+                alt="تطبيقات"
               />
               <div
                 class="overlay d-flex flex-column justify-content-end align-items-center text-white"
@@ -797,8 +800,8 @@
                     <i class="fas fa-link"></i>
                   </a>
                 </div>
-                <h6 class="mb-1">Project Name #6</h6>
-                <p class="mb-3">Illustration, Website</p>
+                <h6 class="mb-1">المشروع رقم 6</h6>
+                <p class="mb-3">رسوم توضيحية، مواقع ويب</p>
               </div>
             </div>
           </div>
@@ -808,10 +811,14 @@
     <!-- End Works -->
 
     <!-- Start Testimonial -->
-    <section id="testimonial" class="testimonial-section align-content-center">
+    <section
+      id="testimonial"
+      class="testimonial-section align-content-center"
+      dir="rtl"
+    >
       <div class="container-fluid">
         <div class="text-center mb-5">
-          <h2>Customer <span>Says</span></h2>
+          <h2><span>آراء</span> العملاء</h2>
           <div class="brdr"></div>
         </div>
 
@@ -825,18 +832,17 @@
                   <i class="fa-solid fa-quote-left fa-2x"></i>
                 </div>
                 <p class="flex-grow-1">
-                  The support staff is AMAZING. Same day service. They also have
-                  built a GREAT theme that supports so many functions. You can
-                  tweak little things here and there and use its functionality
-                  for SO much more! What an AWESOME AWESOME AWESOME theme.
+                  طاقم الدعم مذهل! الخدمة في نفس اليوم. لديهم أيضًا قالب رائع
+                  يدعم العديد من الوظائف. يمكنك تعديل التفاصيل الصغيرة هنا وهناك
+                  واستخدامه للكثير من الأغراض! إنه قالب رائع رائع رائع.
                 </p>
                 <div class="customer-info">
                   <img
                     src="images/imgi_14_testi_pic (1).jpg"
                     class="rounded-circle"
-                    alt="Customer"
+                    alt="عميل"
                   />
-                  <p>Feldhouse, Customer</p>
+                  <p>فيلهوس، عميل</p>
                 </div>
               </div>
             </div>
@@ -849,19 +855,17 @@
                   <i class="fa-solid fa-quote-left fa-2x"></i>
                 </div>
                 <p class="flex-grow-1">
-                  All of my questions were answered, designesia was very
-                  forthcoming and helpful and even sent me custom code for a
-                  specific problem I had. I know one thing: whatever theme
-                  designesia publishes, you can be assured that you get the best
-                  quality and support out there.
+                  تمت الإجابة على جميع أسئلتي، وكان الفريق متعاونًا جدًا حتى أنه
+                  أرسل لي كود مخصص لمشكلة كنت أواجهها. أي قالب ينشره الفريق
+                  سيكون دائمًا بأعلى جودة ودعم ممتاز.
                 </p>
                 <div class="customer-info">
                   <img
                     src="images/imgi_15_testi_pic (2).jpg"
                     class="rounded-circle"
-                    alt="Customer"
+                    alt="عميل"
                   />
-                  <p>Maria, Customer</p>
+                  <p>ماريا، عميلة</p>
                 </div>
               </div>
             </div>
@@ -874,18 +878,16 @@
                   <i class="fa-solid fa-quote-left fa-2x"></i>
                 </div>
                 <p class="flex-grow-1">
-                  There are some themes I have bought and are just 'eh' about.
-                  This one hands down does so much more than you could think.
-                  Perfect theme - and thanks for continually updating and
-                  improving it!
+                  هناك قوالب اشتريتها وكانت عادية، لكن هذا القالب يفعل أكثر مما
+                  تتوقع. قالب مثالي، وشكرًا على التحديثات المستمرة والتحسينات!
                 </p>
                 <div class="customer-info">
                   <img
                     src="images/imgi_16_testi-default.jpg"
                     class="rounded-circle"
-                    alt="Customer"
+                    alt="عميل"
                   />
-                  <p>Jack, Customer</p>
+                  <p>جاك، عميل</p>
                 </div>
               </div>
             </div>
@@ -898,17 +900,16 @@
                   <i class="fa-solid fa-quote-left fa-2x"></i>
                 </div>
                 <p class="flex-grow-1">
-                  Again, great template and I love that it works on the
-                  computer, iPad, phone, etc. Very clean design, keep up the
-                  great work!
+                  قالب رائع يعمل على الكمبيوتر، الآيباد، الهاتف... إلخ. تصميم
+                  نظيف جدًا، استمروا بالإبداع!
                 </p>
                 <div class="customer-info">
                   <img
                     src="images/imgi_14_testi_pic (1).jpg"
                     class="rounded-circle"
-                    alt="Customer"
+                    alt="عميل"
                   />
-                  <p>Barbara, Customer</p>
+                  <p>باربرا، عميلة</p>
                 </div>
               </div>
             </div>
@@ -921,17 +922,16 @@
                   <i class="fa-solid fa-quote-left fa-2x"></i>
                 </div>
                 <p class="flex-grow-1">
-                  Everything is nicely accessible inside the theme customization
-                  screen. It is easily comprehensible, the way things work is
-                  very natural and intuitive.
+                  كل شيء مرتب بشكل واضح داخل واجهة التخصيص. سهل الاستخدام، طبيعي
+                  وبديهي جدًا.
                 </p>
                 <div class="customer-info">
                   <img
                     src="images/imgi_15_testi_pic (2).jpg"
                     class="rounded-circle"
-                    alt="Customer"
+                    alt="عميل"
                   />
-                  <p>Alex, Customer</p>
+                  <p>أليكس، عميل</p>
                 </div>
               </div>
             </div>
@@ -944,17 +944,16 @@
                   <i class="fa-solid fa-quote-left fa-2x"></i>
                 </div>
                 <p class="flex-grow-1">
-                  Fit our needs like a glove. 1 hour to setup. I am currently
-                  implementing the language support. Thanks for the awesome
-                  theme!
+                  القالب مناسب تمامًا لاحتياجاتنا. استغرق الإعداد ساعة واحدة
+                  فقط. وأنا أضيف الآن دعم اللغات. شكرًا على القالب الرائع!
                 </p>
                 <div class="customer-info">
                   <img
                     src="images/imgi_16_testi-default.jpg"
                     class="rounded-circle"
-                    alt="Customer"
+                    alt="عميل"
                   />
-                  <p>David, Customer</p>
+                  <p>ديفيد، عميل</p>
                 </div>
               </div>
             </div>
@@ -967,10 +966,10 @@
     <!-- End Testimonial -->
 
     <!-- Start Blog -->
-    <section id="blog" class="align-content-center">
+    <section id="blog" class="align-content-center" dir="rtl">
       <div class="container-fluid">
         <div class="text-center mb-5">
-          <h2>Our <span>Blog</span></h2>
+          <h2><span>مدونتنا</span></h2>
           <div class="brdr"></div>
         </div>
 
@@ -983,14 +982,14 @@
                     <img
                       src="images/imgi_18_pic-blog-1.jpg"
                       class="d-block w-100"
-                      alt="Blog Image 1"
+                      alt="صورة المدونة 1"
                     />
                   </div>
                   <div class="carousel-item">
                     <img
                       src="images/imgi_17_pic-blog-2.jpg"
                       class="d-block w-100"
-                      alt="Blog Image 2"
+                      alt="صورة المدونة 2"
                     />
                   </div>
                 </div>
@@ -1012,23 +1011,22 @@
                 </button>
               </div>
 
-              <div class="card-body">
+              <div class="card-body text-end">
                 <div class="row">
                   <div class="col-3 text-center date">
                     <h4 class="mb-0 p-3">20</h4>
                     <p class="p-3">AUG</p>
                   </div>
                   <div class="col-9">
-                    <h5>Best DSLR Camera</h5>
+                    <h5>أفضل كاميرا DSLR</h5>
                     <p>
-                      In the world of photography, capturing moments with
-                      precision and artistic flair is paramount. And when it
-                      comes to achieving professional-quality images...
+                      في عالم التصوير الفوتوغرافي، يعد التقاط اللحظات بدقة ولمسة
+                      فنية أمرًا بالغ الأهمية. وعندما يتعلق الأمر بالحصول على
+                      صور بجودة احترافية...
                     </p>
                     <a href="#"
-                      >Read more
-                      <i class="fa-solid fa-arrow-right-to-bracket"></i
-                    ></a>
+                      >اقرأ المزيد <i class="fa-solid fa-arrow-left"></i>
+                    </a>
                   </div>
                 </div>
               </div>
@@ -1043,14 +1041,14 @@
                     <img
                       src="images/imgi_20_pic-blog-3.jpg"
                       class="d-block w-100"
-                      alt="Blog Image 1"
+                      alt="صورة المدونة 3"
                     />
                   </div>
                   <div class="carousel-item">
                     <img
                       src="images/imgi_19_pic-blog-4.jpg"
                       class="d-block w-100"
-                      alt="Blog Image 2"
+                      alt="صورة المدونة 4"
                     />
                   </div>
                 </div>
@@ -1071,22 +1069,22 @@
                   <span class="carousel-control-next-icon"></span>
                 </button>
               </div>
-              <div class="card-body">
+
+              <div class="card-body text-end">
                 <div class="row">
                   <div class="col-3 text-center date">
                     <h4 class="mb-0 p-3">18</h4>
                     <p class="p-3">SEP</p>
                   </div>
                   <div class="col-9">
-                    <h5>Product Photography</h5>
+                    <h5>تصوير المنتجات</h5>
                     <p>
-                      In the world of photography, capturing moments with
-                      precision and artistic flair is paramount. And when it
-                      comes to achieving professional-quality images...
+                      في عالم التصوير الفوتوغرافي، يعد إبراز المنتجات بشكل جذاب
+                      ودقيق فنًا بحد ذاته. يساهم في إظهار التفاصيل وإيصال قيمة
+                      المنتج للمستهلك...
                     </p>
                     <a href="#"
-                      >Read more
-                      <i class="fa-solid fa-arrow-right-to-bracket"></i
+                      >اقرأ المزيد <i class="fa-solid fa-arrow-left"></i
                     ></a>
                   </div>
                 </div>
@@ -1102,14 +1100,14 @@
                     <img
                       src="images/imgi_22_pic-blog-5.jpg"
                       class="d-block w-100"
-                      alt="Blog Image 1"
+                      alt="صورة المدونة 5"
                     />
                   </div>
                   <div class="carousel-item">
                     <img
                       src="images/imgi_21_pic-blog-6.jpg"
                       class="d-block w-100"
-                      alt="Blog Image 2"
+                      alt="صورة المدونة 6"
                     />
                   </div>
                 </div>
@@ -1130,22 +1128,21 @@
                   <span class="carousel-control-next-icon"></span>
                 </button>
               </div>
-              <div class="card-body">
+
+              <div class="card-body text-end">
                 <div class="row">
                   <div class="col-3 text-center date">
                     <h4 class="mb-0 p-3">10</h4>
                     <p class="p-3">OCT</p>
                   </div>
                   <div class="col-9">
-                    <h5>Photography Tips</h5>
+                    <h5>نصائح التصوير الفوتوغرافي</h5>
                     <p>
-                      Portrait photography has an incredible ability to capture
-                      the essence of an individual, revealing their personality,
-                      emotions, and unique story....
+                      يتميز تصوير البورتريه بقدرة مذهلة على التقاط جوهر الشخصية،
+                      وإبراز العواطف والقصة الفريدة لكل فرد...
                     </p>
                     <a href="#"
-                      >Read more
-                      <i class="fa-solid fa-arrow-right-to-bracket"></i
+                      >اقرأ المزيد <i class="fa-solid fa-arrow-left"></i
                     ></a>
                   </div>
                 </div>
@@ -1156,9 +1153,9 @@
 
         <div class="text-center my-5 pb-5 view-all-posts">
           <a href="#" class="btn btn-outline-primary">
-            View All Posts
-            <i class="fa-solid fa-arrow-right-to-bracket"></i
-          ></a>
+            عرض جميع المقالات
+            <i class="fa-solid fa-arrow-left"></i>
+          </a>
         </div>
       </div>
 
@@ -1170,56 +1167,56 @@
                 <img
                   src="images/imgi_23_1.png"
                   class="img-fluid"
-                  alt="Logo 1"
+                  alt="شعار 1"
                 />
               </div>
               <div class="swiper-slide text-center">
                 <img
                   src="images/imgi_24_2.png"
                   class="img-fluid"
-                  alt="Logo 2"
+                  alt="شعار 2"
                 />
               </div>
               <div class="swiper-slide text-center">
                 <img
                   src="images/imgi_25_3.png"
                   class="img-fluid"
-                  alt="Logo 3"
+                  alt="شعار 3"
                 />
               </div>
               <div class="swiper-slide text-center">
                 <img
                   src="images/imgi_26_4.png"
                   class="img-fluid"
-                  alt="Logo 4"
+                  alt="شعار 4"
                 />
               </div>
               <div class="swiper-slide text-center">
                 <img
                   src="images/imgi_27_5.png"
                   class="img-fluid"
-                  alt="Logo 5"
+                  alt="شعار 5"
                 />
               </div>
               <div class="swiper-slide text-center">
                 <img
                   src="images/imgi_28_6.png"
                   class="img-fluid"
-                  alt="Logo 6"
+                  alt="شعار 6"
                 />
               </div>
               <div class="swiper-slide text-center">
                 <img
                   src="images/imgi_29_7.png"
                   class="img-fluid"
-                  alt="Logo 7"
+                  alt="شعار 7"
                 />
               </div>
               <div class="swiper-slide text-center">
                 <img
                   src="images/imgi_30_8.png"
                   class="img-fluid"
-                  alt="Logo 8"
+                  alt="شعار 8"
                 />
               </div>
             </div>
@@ -1230,65 +1227,73 @@
     <!-- End Blog -->
 
     <!-- Start Contact -->
-    <section id="contact" class="d-flex align-items-center">
+    <section id="contact" class="d-flex align-items-center" dir="rtl">
       <div class="container">
         <div class="text-center mb-5 title">
-          <h2>Contact <span>Us</span></h2>
+          <h2>تواصل <span>معنا</span></h2>
           <div class="brdr my-4"></div>
-          <p>Get in touch with us. Feel Free to use contact below.</p>
+          <p>تواصل معنا. لا تتردد في استخدام وسائل الاتصال أدناه.</p>
         </div>
 
         <div class="row">
+          <!-- Contact Form -->
           <div class="col-md-8 col-12 mb-4 mt-3">
             <form>
               <div class="row g-3">
                 <div class="col-md-6">
                   <input
                     type="text"
-                    class="form-control contact-input"
-                    placeholder="Your Name"
+                    class="form-control contact-input text-start"
+                    placeholder="اسمك"
                   />
                 </div>
                 <div class="col-md-6">
                   <input
                     type="email"
-                    class="form-control contact-input"
-                    placeholder="Your Email"
+                    class="form-control contact-input text-start"
+                    placeholder="بريدك الإلكتروني"
                   />
                 </div>
                 <div class="col-12">
                   <textarea
                     rows="5"
-                    class="form-control contact-input"
-                    placeholder="Your Message"
+                    class="form-control contact-input text-start"
+                    placeholder="رسالتك"
                   ></textarea>
                 </div>
                 <div class="col-12">
                   <button type="submit" class="btn btn-outline-primary">
-                    submit form
+                    إرسال النموذج
                   </button>
                 </div>
               </div>
             </form>
           </div>
 
+          <!-- Contact Info -->
           <div class="col-md-4 col-12 more-info">
-            <div class="contact-info text-white">
-              <div class="d-flex align-items-center py-3 border-bottom">
+            <div class="contact-info text-white text-end">
+              <div
+                class="d-flex align-items-center justify-content-start py-3 border-bottom"
+              >
                 <i class="fa-solid fa-location-dot me-3"></i>
-                <span>100 Mainstreet Center, Sydney</span>
+                <span>١٠٠ مركز مين ستريت، سيدني</span>
               </div>
-              <div class="d-flex align-items-center py-3 border-bottom">
+              <div
+                class="d-flex align-items-center justify-content-start py-3 border-bottom"
+              >
                 <i class="fa-solid fa-phone me-3"></i>
-                <span>(208) 333 9296</span>
+                <span>(٢٠٨) ٣٣٣ ٩٢٩٦</span>
               </div>
-              <div class="d-flex align-items-center py-3 border-bottom">
-                <i class="fa-solid fa-envelope me-3"></i>
+              <div
+                class="d-flex align-items-center justify-content-end py-3 border-bottom"
+              >
                 <span>contact@cubic-studio.com</span>
+                <i class="fa-solid fa-envelope ms-3"></i>
               </div>
-              <div class="d-flex align-items-center py-3">
-                <i class="fa-solid fa-globe me-3"></i>
+              <div class="d-flex align-items-center justify-content-end py-3">
                 <span>support.cubic.com</span>
+                <i class="fa-solid fa-globe ms-3"></i>
               </div>
             </div>
           </div>
@@ -1301,6 +1306,7 @@
     <footer
       id="footer"
       class="container-fluid align-content-center p-5 text-center"
+      dir="rtl"
     >
       <div class="my-5">
         <a href="#" class="social-link"
@@ -1317,7 +1323,7 @@
         ></a>
       </div>
 
-      <p class="mb-4">© Copyright 2025 - Cubic by Designesia</p>
+      <p class="mb-4">© جميع الحقوق محفوظة ٢٠٢٥ - Cubic بواسطة Designesia</p>
     </footer>
     <!-- End Footer -->
 
