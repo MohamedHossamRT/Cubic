@@ -10,6 +10,7 @@
 
 - 📱 **Responsive Design** – Optimized for desktop, tablet, and mobile
 - 🅱️ **Bootstrap Framework** – Clean grid system and utility classes
+- 🌐 **EN-AR Languages** - Displayed in english or arabic language
 - 🎪 **Swiper Integration** – Smooth, touch-enabled sliders and carousels
 - 🧭 **Scrollspy Navigation** – Highlights active sections while scrolling
 - 🎨 **FontAwesome Icons** – Rich iconography for a modern look
